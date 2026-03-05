@@ -13,6 +13,8 @@ public class CreateTopicMsg extends Message {
     private String topic;
 
 	// Complete the constructor, get/set-methods, and toString method
+    // as described in the project text
+
     public void setTopic (String topic) {
         this.topic = topic;
     }
@@ -25,6 +27,4 @@ public class CreateTopicMsg extends Message {
     public String toString() {
         return "CreateTopicMsg [topic= " + topic + "]" + super.toString();
     }
-
-    // as described in the project text	
 }

@@ -13,6 +13,8 @@ public class DeleteTopicMsg extends Message {
     private String topic;
 
 	// Complete the constructor, get/set-methods, and toString method
+    // as described in the project text
+
     public void setTopic(String topic) {
         this.topic = topic;
     }
@@ -25,7 +27,4 @@ public class DeleteTopicMsg extends Message {
     public String toString() {
         return "DeleteTopicMsg [topic= " + topic + "]" + super.toString();
     }
-
-	// as described in the project text
-
 }
