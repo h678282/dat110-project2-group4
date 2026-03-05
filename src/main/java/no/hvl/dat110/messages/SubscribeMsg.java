@@ -5,13 +5,28 @@ public class SubscribeMsg extends Message {
 	// message sent from client to subscribe on a topic 
 
     public SubscribeMsg(String user, String topic) {
-
+        super(MessageType.SUBSCRIBE, user);
+        this.topic = topic;
     }
 
 	// TODO:
 	// Implement object variables - a topic is required
+    private String topic;
 
 	// Complete the constructor, get/set-methods, and toString method
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    @Override
+    public String toString() {
+        return "SubscribeMsg [topic= " + topic + "]" + super.toString();
+    }
+
 	// as described in the project text
 		
 }
